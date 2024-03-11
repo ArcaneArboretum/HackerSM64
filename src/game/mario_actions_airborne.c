@@ -1,4 +1,4 @@
-#include <PR/ultratypes.h>
+ #include <PR/ultratypes.h>
 
 #include "sm64.h"
 #include "mario_actions_airborne.h"
@@ -16,6 +16,8 @@
 #include "rumble_init.h"
 
 #include "config.h"
+
+#define Z_TWIRL
 
 void play_flip_sounds(struct MarioState *m, s16 frame1, s16 frame2, s16 frame3) {
     s32 animFrame = m->marioObj->header.gfx.animInfo.animFrame;
@@ -628,6 +630,14 @@ s32 act_long_jump(struct MarioState *m) {
         animation = MARIO_ANIM_SLOW_LONGJUMP;
     }
 
+    if (m->input & INPUT_B_PRESSED) {
+      return set_mario_action(m, ACT_DIVE, 0);
+    }
+
+    if (m->input & INPUT_Z_PRESSED) {
+      return set_mario_action(m, ACT_GROUND_POUND, 0);
+    }
+
     play_mario_sound(m, SOUND_ACTION_TERRAIN_JUMP, SOUND_MARIO_YAHOO);
 
     if (m->floor->type == SURFACE_VERTICAL_WIND && m->actionState == 0) {
@@ -674,7 +684,9 @@ s32 act_twirling(struct MarioState *m) {
 
 #ifdef Z_TWIRL
     if (m->input & INPUT_Z_DOWN) {
-        yawVelTarget = 0x2800;
+        yawVelTarget = 0x3200;
+        m->vel[1] -= 20.0f;
+        mario_set_forward_vel(m, 0.0f);
     } else
 #endif
 
@@ -700,8 +712,18 @@ s32 act_twirling(struct MarioState *m) {
 
     switch (perform_air_step(m, 0)) {
         case AIR_STEP_LANDED:
+#ifdef Z_TWIRL
+          if (m->input & INPUT_Z_DOWN) {
+            play_mario_heavy_landing_sound(m, SOUND_ACTION_TERRAIN_HEAVY_LANDING);
+            if (!check_fall_damage(m, ACT_HARD_BACKWARD_GROUND_KB)) {
+              m->particleFlags |= PARTICLE_MIST_CIRCLE | PARTICLE_HORIZONTAL_STAR;
+              set_mario_action(m, ACT_GROUND_POUND_LAND, 0);
+            }
+          } else
+#endif
             set_mario_action(m, ACT_TWIRL_LAND, 0);
-            break;
+            
+          break;
 
         case AIR_STEP_HIT_WALL:
             mario_bonk_reflection(m, FALSE);
@@ -725,6 +747,10 @@ s32 act_dive(struct MarioState *m) {
     } else {
         play_mario_sound(m, SOUND_ACTION_TERRAIN_JUMP, 0);
     }
+
+    //if (m->input & INPUT_Z_PRESSED) {
+    //  return set_mario_action(m, ACT_GROUND_POUND, 0);
+    //}
 
     set_mario_animation(m, MARIO_ANIM_DIVE);
     if (mario_check_object_grab(m)) {
@@ -819,6 +845,10 @@ s32 act_water_jump(struct MarioState *m) {
         mario_set_forward_vel(m, 15.0f);
     }
 
+    if (m->input & INPUT_Z_PRESSED) {
+      return set_mario_action(m, ACT_GROUND_POUND, 0);
+    }
+
     play_mario_sound(m, SOUND_ACTION_WATER_JUMP, 0);
     set_mario_animation(m, MARIO_ANIM_SINGLE_JUMP);
 
@@ -855,6 +885,10 @@ s32 act_hold_water_jump(struct MarioState *m) {
         mario_set_forward_vel(m, 15.0f);
     }
 
+    if (m->input & INPUT_Z_PRESSED) {
+      return drop_and_set_mario_action(m, ACT_GROUND_POUND, 0);
+    }
+
     play_mario_sound(m, SOUND_ACTION_WATER_JUMP, 0);
     set_mario_animation(m, MARIO_ANIM_JUMP_WITH_LIGHT_OBJ);
 
@@ -879,6 +913,10 @@ s32 act_hold_water_jump(struct MarioState *m) {
 s32 act_steep_jump(struct MarioState *m) {
     if (m->input & INPUT_B_PRESSED) {
         return set_mario_action(m, ACT_DIVE, 0);
+    }
+
+    if (m->input & INPUT_Z_PRESSED) {
+      return set_mario_action(m, ACT_GROUND_POUND, 0);
     }
 
     play_mario_sound(m, SOUND_ACTION_TERRAIN_JUMP, 0);
@@ -911,6 +949,14 @@ s32 act_ground_pound(struct MarioState *m) {
     f32 yOffset;
 
     play_sound_if_no_flag(m, SOUND_ACTION_THROW, MARIO_ACTION_SOUND_PLAYED);
+
+    if (m->input & INPUT_B_PRESSED) {
+      m->faceAngle[1] = m->intendedYaw;
+      m->vel[1] = 30.0f;
+      mario_set_forward_vel(m, 40.0f);
+      set_mario_action(m, ACT_DIVE, 0);
+      return FALSE;
+    }
 
     if (m->actionState == 0) {
         if (m->actionTimer < 10) {
@@ -1588,6 +1634,11 @@ s32 act_jump_kick(struct MarioState *m) {
         m->marioObj->header.gfx.animInfo.animID = -1;
         set_mario_animation(m, MARIO_ANIM_AIR_KICK);
         m->actionState = ACT_STATE_JUMP_KICK_KICKING;
+    }
+
+
+    if (m->input & INPUT_Z_PRESSED) {
+      return set_mario_action(m, ACT_GROUND_POUND, 0);
     }
 
     s32 animFrame = m->marioObj->header.gfx.animInfo.animFrame;

@@ -1,0 +1,10 @@
+extern Lights1 super2uigi62dl_f3dlite_material_001_lights;
+extern Lights1 super2uigi62dl_f3dlite_material_001_v5_lights;
+extern Vtx super2uigi62dl_super2uigi62_mesh_vtx_cull[8];
+extern Vtx super2uigi62dl_super2uigi62_mesh_vtx_0[1270];
+extern Gfx super2uigi62dl_super2uigi62_mesh_tri_0[];
+extern Vtx super2uigi62dl_super2uigi62_mesh_vtx_1[1441];
+extern Gfx super2uigi62dl_super2uigi62_mesh_tri_1[];
+extern Gfx mat_super2uigi62dl_f3dlite_material_001[];
+extern Gfx mat_super2uigi62dl_f3dlite_material_001_v5[];
+extern Gfx super2uigi62dl_super2uigi62_mesh[];

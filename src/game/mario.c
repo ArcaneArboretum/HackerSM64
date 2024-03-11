@@ -1561,6 +1561,17 @@ void sink_mario_in_quicksand(struct MarioState *m) {
     marioObj->header.gfx.pos[1] -= m->quicksandDepth;
 }
 
+void check_toggle_vanish_cap(struct MarioState* m) {
+    if (m->controller->buttonPressed & L_TRIG) {
+        if (m->flags & MARIO_VANISH_CAP) {
+          m->flags &= ~MARIO_VANISH_CAP;
+        }
+        else {
+          m->flags |= MARIO_VANISH_CAP;
+        }
+    }
+}
+
 /**
  * Is a binary representation of the frames to flicker Mario's cap when the timer
  * is running out.
@@ -1619,7 +1630,7 @@ u32 update_and_return_cap_flags(struct MarioState *m) {
 void mario_update_hitbox_and_cap_model(struct MarioState *m) {
     struct MarioBodyState *bodyState = m->marioBodyState;
     s32 flags = update_and_return_cap_flags(m);
-
+    
     if (flags & MARIO_VANISH_CAP) {
         bodyState->modelState = MODEL_STATE_NOISE_ALPHA;
     }
@@ -1732,6 +1743,7 @@ s32 execute_mario_action(UNUSED struct Object *obj) {
         gMarioState->marioObj->header.gfx.node.flags &= ~GRAPH_RENDER_INVISIBLE;
         mario_reset_bodystate(gMarioState);
         update_mario_inputs(gMarioState);
+        check_toggle_vanish_cap(gMarioState);
 
 #ifdef PUPPYCAM
         if (!(gPuppyCam.flags & PUPPYCAM_BEHAVIOUR_FREE)) {
@@ -1747,6 +1759,7 @@ s32 execute_mario_action(UNUSED struct Object *obj) {
             return ACTIVE_PARTICLE_NONE;
         }
 
+
         // The function can loop through many action shifts in one frame,
         // which can lead to unexpected sub-frame behavior. Could potentially hang
         // if a loop of actions were found, but there has not been a situation found.
@@ -1759,6 +1772,7 @@ s32 execute_mario_action(UNUSED struct Object *obj) {
                 case ACT_GROUP_CUTSCENE:   inLoop = mario_execute_cutscene_action(gMarioState);   break;
                 case ACT_GROUP_AUTOMATIC:  inLoop = mario_execute_automatic_action(gMarioState);  break;
                 case ACT_GROUP_OBJECT:     inLoop = mario_execute_object_action(gMarioState);     break;
+                //case ACT_GROUP_CUSTOM:     inLoop = mario_execute_custom_action(gMarioState);     break;
             }
         }
 

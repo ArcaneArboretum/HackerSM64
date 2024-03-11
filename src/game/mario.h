@@ -53,4 +53,7 @@ s32 execute_mario_action(UNUSED struct Object *obj);
 void init_mario(void);
 void init_mario_from_save_file(void);
 
+// CUSTOM
+void check_toggle_vanish_cap(struct MarioState* m);
+
 #endif // MARIO_H
