@@ -1,4 +1,4 @@
-// Parameters: dialog enum ID, (unused), lines per box, left offset, width
+// Parameters: dialog enum ID, (unused), lines per box, left offset, bottom offset, text
 
 #ifdef VERSION_EU
 #define COMRADES "friends"
@@ -12,201 +12,141 @@
 #define SCRAM "scram--"
 #endif
 
-DEFINE_DIALOG(DIALOG_000, 1, 6, 30, 200, _("\
-Wow! You're smack in the\n\
-middle of the battlefield.\n\
-You'll find the Power\n\
-Stars that Bowser stole\n\
-inside the painting\n\
-worlds.\n\
-First, talk to the\n\
-Bob-omb Buddy. (Press [B]\n\
-to talk.) He'll certainly\n\
-help you out, and so will\n\
-his " COMRADES " in other\n\
-areas.\n\
-To read signs, stop, face\n\
-them and press [B]. Press [A]\n\
-or [B] to scroll ahead. You\n\
-can talk to some other\n\
-characters by facing them\n\
-and pressing [B]."))
-
-DEFINE_DIALOG(DIALOG_001, 1, 4, 95, 200, _("\
-Watch out! If you wander\n\
-around here, you're liable\n\
-to be " PLASTERED " by a\n\
-water bomb!\n\
-Those enemy Bob-ombs love\n\
-to fight, and they're\n\
-always finding ways to\n\
-attack.\n\
-This meadow has become\n\
-a battlefield ever since\n\
-the Big Bob-omb got his\n\
-paws on the Power Star.\n\
-Can you recover the Star\n\
-for us? Cross the bridge\n\
-and go left up the path\n\
-to find the Big Bob-omb.\n\
-Please come back to see\n\
-me after you've retrieved\n\
-the Power Star!"))
-
-DEFINE_DIALOG(DIALOG_002, 1, 4, 95, 200, _("\
-Hey, you! It's dangerous\n\
-ahead, so listen up! Take\n\
-my advice.\n\
+DEFINE_DIALOG(DIALOG_000, 1, 4, 30, 200, _("\
+Welcome to\n\
+Super 2uigi 62!\n\
 \n\
-Cross the two\n\
-bridges ahead, then\n\
-watch for falling\n\
-water bombs.\n\
-The Big Bob-omb at the\n\
-top of the mountain is\n\
-very powerful--don't let\n\
-him grab you!\n\
-We're Bob-omb Buddies,\n\
-and we're on your side.\n\
-You can talk to us\n\
-whenever you'd like to!"))
+\n\
+This hack was made for\n\
+the SimpleFlips\n\
+March 2024\n\
+Slide-Hack Competition,\n\
+sponsored by\n\
+PirateSoftware!\n\
+\n\
+\n\
+This is my first hack!\n\
+So if there's any weird\n\
+issues, that's probably\n\
+why.\n\
+Hack Made by\n\
+ArcaneArboretum\n\
+with advice from\n\
+someone2639 and the rest\n\
+of the romhacking.com\n\
+discord and resources!\n\
+\n\
+\n\
+Textures for the hack\n\
+were provided by\n\
+MrGreenThunder\n\
+on SMWCentral.net.\n\
+Okay, now that credits\n\
+are over, let's get\n\
+into some hack details.\n\
+\n\
+There are 7 stars in this\n\
+hack, one at the end of\n\
+each of 3 slide areas,\n\
+and one for getting\n\
+6 out of 8 red coins\n\
+on each slide.\n\
+There is also a\n\
+100 coin star\n\
+in the main hub area,\n\
+but not in any\n\
+of the slides.\n\
+\n\
+Now, go talk to E.Gadd\n\
+to get started!"))
+
+DEFINE_DIALOG(DIALOG_001, 1, 6, 105, 200, _("\
+Hey 2uigi!\n\
+Confused?\n\
+You ought to be.\n\
+\n\
+\n\
+\n\
+The real Luigi went\n\
+into that mansion\n\
+a couple hours ago\n\
+with my Poltergust 2000\n\
+and hasn't come back.\n\
+\n\
+I created you as a clone\n\
+from Luigi's DNA so you\n\
+could go in there and\n\
+find my Poltergust...\n\
+\n\
+\n\
+I mean...\n\
+\n\
+\n\
+\n\
+\n\
+\n\
+...make sure Luigi's okay.\n\
+\n\
+\n\
+\n\
+\n\
+\n\
+You didn't quite have\n\
+time to finish baking\n\
+so to speak, so you\n\
+might find yourself\n\
+a little gooey still.\n\
+Heh, heh.\n\
+I also made a couple\n\
+improvements over the\n\
+original model,\n\
+if I do say so myself.\n\
+\n\
+\n\
+If you need some time\n\
+to get used to your new\n\
+self, why don't you head\n\
+on into my lab behind\n\
+me and figure those new\n\
+skills of yours out first.\n\
+Then, head to the mansion\n\
+and recover my poltergust!\n\
+\n\
+\n\
+\n\
+\n\
+I mean...\n\
+\n\
+\n\
+\n\
+\n\
+\n\
+...go save Luigi!"))
+
+DEFINE_DIALOG(DIALOG_002, 1, 3, 30, 200, _("\
+HEY YOU!\n\
+Gate's closed\n\
+for a reason.\n\
+That means\n\
+NO ENTRY ALLOWED!\n\
+\n\
+You definitely shouldn't\n\
+go gooey and walk right\n\
+on through...\n\
+I MEAN IT!\n\
+NOW SCRAM!"))
 
 DEFINE_DIALOG(DIALOG_003, 1, 5, 95, 200, _("\
-Thank you, Mario! The Big\n\
-Bob-omb is nothing but a\n\
-big dud now! But the\n\
-battle for the castle has\n\
-just begun.\n\
-Other enemies are holding\n\
-the other Power Stars. If\n\
-you recover more Stars,\n\
-you can open new doors\n\
-that lead to new worlds!\n\
-My Bob-omb Buddies are\n\
-waiting for you. Be sure\n\
-to talk to them--they'll\n\
-set up cannons for you."))
+Great job!\n\
+You collected\n\
+all 7 Stars\n\
+in Super 2uigi 62.\n\
+Thanks for playing!"))
 
-DEFINE_DIALOG(DIALOG_004, 1, 3, 95, 200, _("\
-We're peace-loving\n\
-Bob-ombs, so we don't use\n\
-cannons.\n\
-But if you'd like\n\
-to blast off, we don't\n\
-mind. Help yourself.\n\
-We'll prepare all of the\n\
-cannons in this course for\n\
-you to use. Bon Voyage!"))
-
-DEFINE_DIALOG(DIALOG_005, 1, 3, 30, 200, _("\
-Hey, Mario! Is it true\n\
-that you beat the Big\n\
-Bob-omb? Cool!\n\
-You must be strong. And\n\
-pretty fast. So, how fast\n\
-are you, anyway?\n\
-Fast enough to beat me...\n\
-Koopa the Quick? I don't\n\
-think so. Just try me.\n\
-How about a race to the\n\
-mountaintop, where the\n\
-Big Bob-omb was?\n\
-Whaddya say? When I say\n\
-『Go,』 let the race begin!\n\
-\n\
-Ready....\n\
-\n\
-//Go!////Don't Go"))
-
-DEFINE_DIALOG(DIALOG_006, 1, 3, 30, 200, _("\
-Hey!!! Don't try to " SCAM_ME
-"You've gotta run\n\
-the whole course.\n\
-Later. Look me up when\n\
-you want to race for\n\
-real."))
-
-DEFINE_DIALOG(DIALOG_007, 1, 5, 30, 200, _("\
-Hufff...fff...pufff...\n\
-Whoa! You...really...are...\n\
-fast! A human blur!\n\
-Here you go--you've won\n\
-it, fair and square!"))
-
-DEFINE_DIALOG(DIALOG_008, 1, 4, 30, 200, _("\
-BEWARE OF CHAIN CHOMP\n\
-Extreme Danger!\n\
-Get close and press [C]^\n\
-for a better look.\n\
-Scary, huh?\n\
-See the Red Coin on top\n\
-of the stake?\n\
-\n\
-When you collect eight of\n\
-them, a Power Star will\n\
-appear in the meadow\n\
-across the bridge."))
-
-DEFINE_DIALOG(DIALOG_009, 1, 5, 30, 200, _("\
-Long time, no see! Wow,\n\
-have you gotten fast!\n\
-Have you been training\n\
-on the sly, or is it the\n\
-power of the Stars?\n\
-I've been feeling down\n\
-about losing the last\n\
-race. This is my home\n\
-course--how about a\n\
-rematch?\n\
-The goal is in\n\
-Windswept Valley.\n\
-Ready?\n\
-\n\
-//Go//// Don't Go"))
-
-DEFINE_DIALOG(DIALOG_010, 1, 4, 30, 200, _("\
-You've stepped on the\n\
-Wing Cap Switch. Wearing\n\
-the Wing Cap, you can\n\
-soar through the sky.\n\
-Now Wing Caps will pop\n\
-out of all the red blocks\n\
-you find.\n\
-\n\
-Would you like to Save?\n\
-\n\
-//Yes////No"))
-
-DEFINE_DIALOG(DIALOG_011, 1, 4, 30, 200, _("\
-You've just stepped on\n\
-the Metal Cap Switch!\n\
-The Metal Cap makes\n\
-Mario invincible.\n\
-Now Metal Caps will\n\
-pop out of all of the\n\
-green blocks you find.\n\
-\n\
-Would you like to Save?\n\
-\n\
-//Yes////No"))
-
-DEFINE_DIALOG(DIALOG_012, 1, 4, 30, 200, _("\
-You've just stepped on\n\
-the Vanish Cap Switch.\n\
-The Vanish Cap makes\n\
-Mario disappear.\n\
-Now Vanish Caps will pop\n\
-from all of the blue\n\
-blocks you find.\n\
-\n\
-Would you like to Save?\n\
-\n\
-//Yes////No"))
-
-DEFINE_DIALOG(DIALOG_013, 1, 5, 30, 200, _("\
+DEFINE_DIALOG(DIALOG_004, 1, 5, 30, 200, _("\
 You've collected 100\n\
-coins! Mario gains more\n\
-power from the castle.\n\
+coins! 2uigi celebrates the\n\
+accomplishment with a Star!\n\
 Do you want to Save?\n\
 //Yes////No"))
 

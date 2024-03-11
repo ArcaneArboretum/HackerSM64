@@ -1,6 +1,9 @@
 #ifndef BEHAVIOR_ACTIONS_H
 #define BEHAVIOR_ACTIONS_H
 
+#define BLUE_COIN_SWITCH_PREVIEW
+#define BLUE_COIN_SWITCH_RETRY
+
 void spawn_mist_particles_variable(s32 count, s32 offsetY, f32 size);
 void bhv_spawn_star_no_level_exit(u32 params);
 void bhv_door_rendering_loop(void);
