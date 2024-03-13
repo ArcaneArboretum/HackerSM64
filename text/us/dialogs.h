@@ -316,3 +316,55 @@ Please.\n\
 \n\
 \
 I just put it up."))
+
+// - Sign
+DEFINE_DIALOG(DIALOG_011, 1, 5, 30, 200, _("\
+Alrighty, time I shared\n\
+the last of your\n\
+'improvements' 2uigi!\n\
+You might have figured\n\
+one of them out already.\n\
+\
+First, have you noticed\n\
+you don't take any\n\
+damage when falling\n\
+from extreme heights?\n\
+\n\
+\
+You can thank your\n\
+gooey self for that!\n\
+There's another thing\n\
+you can thank to your\n\
+gooey shape.\n\
+\
+Press [B] while still\n\
+in the air after ground-\n\
+pounding and you'll\n\
+spring out in whatever\n\
+direction you hold.\n\
+\
+Use this technique\n\
+to reach new distances\n\
+and traverse corners\n\
+with your jumps!\n\
+\n\
+\
+You can completely\n\
+change your direction\n\
+in-air with this ability,\n\
+so look out for places\n\
+it might be useful!\n\
+\
+Lastly, you might have\n\
+noticed that you can\n\
+ground-pound after a\n\
+long jump now too!\n\
+\n\
+\
+You'll need this to\n\
+make it to the final\n\
+chamber!\n\
+\n\
+\n\
+Best of luck 2uigi!\n\
+You'll need it."))
