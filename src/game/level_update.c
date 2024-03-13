@@ -916,7 +916,7 @@ void update_hud_values(void) {
 #ifdef BREATH_METER
         s16 numBreathWedges = gMarioState->breath > 0 ? gMarioState->breath >> 8 : 0;
 #endif
-        COND_BIT((gCurrCourseNum >= COURSE_MIN), gHudDisplay.flags, HUD_DISPLAY_FLAG_COIN_COUNT);
+        COND_BIT(TRUE, gHudDisplay.flags, HUD_DISPLAY_FLAG_COIN_COUNT);
 
         if (gHudDisplay.coins < gMarioState->numCoins) {
             if (gGlobalTimer & 1) {
@@ -1352,6 +1352,8 @@ s32 lvl_set_current_level(UNUSED s16 initOrUpdate, s32 levelNum) {
     sWarpCheckpointActive = FALSE;
     gCurrLevelNum = levelNum;
     gCurrCourseNum = gLevelToCourseNumTable[levelNum - 1];
+	if (gCurrLevelNum == LEVEL_CCM) return 0;
+	if (gCurrLevelNum == LEVEL_BOB) return 0;
 	if (gCurrLevelNum == LEVEL_CASTLE_GROUNDS) return 0;
 
     if (gCurrDemoInput != NULL || gCurrCreditsEntry != NULL || gCurrCourseNum == COURSE_NONE) {

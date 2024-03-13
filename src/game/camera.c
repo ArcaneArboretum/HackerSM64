@@ -5913,9 +5913,7 @@ struct CameraTrigger sCamRR[] = {
  * to free_roam when Mario is not walking up the tower.
  */
 struct CameraTrigger sCamBOB[] = {
-    {  1, cam_bob_tower, 2468, 2720, -4608, 3263, 1696, 3072, 0 },
-    { -1, cam_bob_default_free_roam, 0, 0, 0, 0, 0, 0, 0 },
-    NULL_TRIGGER
+	NULL_TRIGGER
 };
 
 /**
@@ -5930,9 +5928,7 @@ struct CameraTrigger sCamCotMC[] = {
  * The CCM triggers are used to set the flag that says when Mario is in the slide shortcut.
  */
 struct CameraTrigger sCamCCM[] = {
-    { 2, cam_ccm_enter_slide_shortcut, -4846, 2061, 27, 1229, 1342, 396, 0 },
-    { 2, cam_ccm_leave_slide_shortcut, -6412, -3917, -6246, 307, 185, 132, 0 },
-    NULL_TRIGGER
+	NULL_TRIGGER
 };
 
 /**
