@@ -18,9 +18,14 @@ PirateSoftware!\n\
 \n\
 \
 This is my first hack!\n\
-So if there's any weird\n\
-issues, that's probably\n\
-why.\n\
+and also my first time\n\
+making a game at all.\n\
+\n\
+\
+I had a lot of fun\n\
+making it and\n\
+I hope you enjoy\n\
+playing it!\n\
 \
 Hack Made by\n\
 ArcaneArboretum\n\
@@ -46,8 +51,8 @@ on SMWCentral.net."))
 DEFINE_DIALOG(DIALOG_001, 1, 6, 105, 200, _("\
 Hey 2uigi!\n\
 Confused?\n\
-You ought to be.\n\
-\n\
+I figured you\n\
+would be.\n\
 \n\
 \n\
 \
@@ -137,7 +142,7 @@ NOW SCRAM!"))
 DEFINE_DIALOG(DIALOG_003, 1, 5, 95, 200, _("\
 Great job!\n\
 You collected\n\
-all 7 Stars\n\
+all 5 Stars\n\
 in Super 2uigi 62.\n\
 Thanks for playing!"))
 
@@ -150,10 +155,10 @@ Do you want to Save?\n\
 //Yes////No"))
 
 // - Sign
-DEFINE_DIALOG(DIALOG_005, 1, 4, 30, 200, _("\
-There are 7 stars in this\n\
+DEFINE_DIALOG(DIALOG_005, 1, 6, 30, 200, _("\
+There are 5 stars in this\n\
 hack, one at the end of\n\
-each of 3 slide areas, \n\
+each of 2 slide areas, \n\
 and one for getting\n\
 6 out of 8 red coins\n\
 on each slide.\n\
@@ -165,8 +170,40 @@ but not in any\n\
 of the slides.\n\
 \n\
 \
+The red coin stars\n\
+are a bit tougher than\n\
+the rest of the hack,\n\
+so if you're new to\n\
+SM64 Romhacks or you\n\
+are playing on a\n\
+\
+time limit (such as\n\
+for the Romhacking.com\n\
+Slide Hack Competition),\n\
+I recommend just going\n\
+for the regular stars\n\
+at the end of each slide.\n\
+\
+Feel free to explore\n\
+around the hub and try\n\
+to find a way onto\n\
+the roof of the mansion\n\
+for a fun surprise!\n\
+\n\
+\
+You might need to learn\n\
+a few new moves from\n\
+E.Gadd's Labratory\n\
+before you try for the\n\
+100 coin star though!\n\
+\n\
+\
 Now, go talk to E.Gadd\n\
-to get started!"))
+to get started!\n\
+\n\
+\n\
+\n\
+...and have fun!"))
 
 // - E.Gadd
 DEFINE_DIALOG(DIALOG_006, 1, 6, 30, 200, _("\
@@ -325,7 +362,13 @@ the last of your\n\
 You might have figured\n\
 one of them out already.\n\
 \
-First, have you noticed\n\
+Did you know that you're\n\
+immune to fire while in\n\
+goo form?\n\
+Talk about too cool to\n\
+be burned!\n\
+\
+Next, have you noticed\n\
 you don't take any\n\
 damage when falling\n\
 from extreme heights?\n\
@@ -333,9 +376,9 @@ from extreme heights?\n\
 \
 You can thank your\n\
 gooey self for that!\n\
-There's another thing\n\
-you can thank to your\n\
-gooey shape.\n\
+Even when not fully\n\
+gooey, you retain\n\
+some springiness!\n\
 \
 Press [B] while still\n\
 in the air after ground-\n\
@@ -361,10 +404,10 @@ ground-pound after a\n\
 long jump now too!\n\
 \n\
 \
-You'll need this to\n\
-make it to the final\n\
-chamber!\n\
-\n\
-\n\
-Best of luck 2uigi!\n\
-You'll need it."))
+You'll need all of\n\
+your skills to make\n\
+it to my painting\n\
+gallery and earn\n\
+a star from me!\n\
+\
+Best of luck 2uigi!"))
