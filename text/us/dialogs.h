@@ -59,7 +59,7 @@ would be.\n\
 The real Luigi went\n\
 into that mansion\n\
 a couple hours ago\n\
-with my Poltergust 2000\n\
+with my Poltergust 3000\n\
 and hasn't come back.\n\
 \n\
 \
@@ -246,6 +246,12 @@ you need.\n\
 Gootastic!\n\
 \n\
 \
+Careful, though!\n\
+Stay gooey for too\n\
+long and you won't\n\
+be able to turn back!\n\
+Watch your health!\n\
+\
 'Goo' ahead and slide down\n\
 to the next section when\n\
 you're ready.\n\
@@ -411,3 +417,49 @@ gallery and earn\n\
 a star from me!\n\
 \
 Best of luck 2uigi!"))
+
+// - Sign
+DEFINE_DIALOG(DIALOG_012, 1, 5, 30, 200, _("\
+E-GADDS!\n\
+\n\
+\n\
+\n\
+\n\
+\
+You made it 2uigi!\n\
+Congrats on reaching my\n\
+painting gallery!\n\
+Sadly, it's a little\n\
+empty at the moment.\n\
+\
+The ghosts of the\n\
+mansion escaped\n\
+and wrecked the place!\n\
+Even my precious\n\
+statues are gone!\n\
+\
+They've even got\n\
+your 'relative',\n\
+Luigi, and more\n\
+importantly, my\n\
+Poltergust 3000!\n\
+\
+Now that you're\n\
+done training,\n\
+head on into\n\
+the mansion and\n\
+get my Poltergust back!\n\
+\
+...\n\
+\n\
+\n\
+\n\
+\n\
+\
+I mean...\n\
+\n\
+\n\
+\n\
+\n\
+\
+... go save Luigi!"))
