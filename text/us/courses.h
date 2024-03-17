@@ -1,6 +1,8 @@
-COURSE_ACTS(COURSE_BOB, _(" 1 BOB-OMB BATTLEFIELD"),
-       _("BIG BOB-OMB ON THE SUMMIT")     , _("FOOTRACE WITH KOOPA THE QUICK") , _("SHOOT TO THE ISLAND IN THE SKY"),
-       _("FIND THE 8 RED COINS")          , _("MARIO WINGS TO THE SKY")        , _("BEHIND CHAIN CHOMP'S GATE"))
+
+       
+COURSE_ACTS(COURSE_BOB, _(" 2 Inside the Mansion"),
+       _("FIND LUIGI!")                   , _("RED COINS ON A GHOST HUNT")     , _(""),
+       _("")                              , _("")                              , _(""))
 
 COURSE_ACTS(COURSE_WF, _(" 2 WHOMP'S FORTRESS"),
        _("CHIP OFF WHOMP'S BLOCK")        , _("TO THE TOP OF THE FORTRESS")    , _("SHOOT INTO THE WILD BLUE"),
@@ -14,7 +16,7 @@ COURSE_ACTS(COURSE_CCM, _(" 1 E.Gadd's Labratory"),
        _("COMPLETE THE TRAINING COURSE")  , _("RED COINS ON THE COURSE")       , _(""),
        _("")                              , _("")                              , _(""))
 
-COURSE_ACTS(COURSE_BBH, _(" 5 BIG BOO'S HAUNT"),
+COURSE_ACTS(COURSE_BBH, _(" 2 Inside the Mansion"),
        _("GO ON A GHOST HUNT")            , _("RIDE BIG BOO'S MERRY-GO-ROUND") , _("SECRET OF THE HAUNTED BOOKS"),
        _("SEEK THE 8 RED COINS")          , _("BIG BOO'S BALCONY")             , _("EYE TO EYE IN THE SECRET ROOM"))
 
@@ -69,7 +71,7 @@ SECRET_STAR(COURSE_WMOTR, _("   WING MARIO OVER THE RAINBOW"))
 SECRET_STAR(COURSE_SA, _("   THE SECRET AQUARIUM"))
 SECRET_STAR(COURSE_CAKE_END, _(""))
 
-CASTLE_SECRET_STARS(_("   CASTLE SECRET STARS"))
+CASTLE_SECRET_STARS(_("MANSION 100 COIN STAR"))
 
 EXTRA_TEXT(0, _("ONE OF THE CASTLE'S SECRET STARS!"))
 EXTRA_TEXT(1, _(""))

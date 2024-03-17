@@ -50,8 +50,6 @@ static s8 sPeachManualBlinkTime = 0;
 static s8 sPeachIsBlinking = FALSE;
 static s8 sPeachBlinkTimes[7] = { 2, 3, 2, 1, 2, 3, 2 };
 
-static u8 sStarsNeededForDialog[] = { 1, 3, 8, 30, 50, 70 };
-
 /**
  * Data for the jumbo star cutscene. It specifies the flight path after triple
  * jumping. Each entry is one keyframe.
@@ -209,16 +207,11 @@ Gfx *geo_switch_peach_eyes(s32 callContext, struct GraphNode *node, UNUSED s32 c
  * numStars has reached a milestone and prevNumStarsForDialog has not reached it.
  */
 s32 get_star_collection_dialog(struct MarioState *m) {
-    s32 i;
     s32 dialogID = 0;
-    s32 numStarsRequired;
+    s8 numStarsRequired = 5;
 
-    for (i = 0; i < ARRAY_COUNT(sStarsNeededForDialog); i++) {
-        numStarsRequired = sStarsNeededForDialog[i];
-        if (m->prevNumStarsForDialog < numStarsRequired && m->numStars >= numStarsRequired) {
-            dialogID = i + DIALOG_141;
-            break;
-        }
+    if(m->numStars >= numStarsRequired) {
+        dialogID = DIALOG_003;
     }
 
     m->prevNumStarsForDialog = m->numStars;
@@ -620,7 +613,7 @@ void general_star_dance_handler(struct MarioState *m, s32 isInWater) {
                     level_trigger_warp(m, WARP_OP_STAR_EXIT);
                 } else {
                     enable_time_stop();
-                    create_dialog_box_with_response(gLastCompletedStarNum == 7 ? DIALOG_013 : DIALOG_014);
+                    create_dialog_box_with_response(gLastCompletedStarNum == 7 ? DIALOG_004 : DIALOG_013);
                     m->actionState = ACT_STATE_STAR_DANCE_DO_SAVE;
                 }
                 break;
