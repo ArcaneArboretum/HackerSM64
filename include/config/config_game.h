@@ -4,6 +4,8 @@
  * GAME SETTINGS *
  *****************/
 
+#define DISABLE_DEMO
+
 /**
  * Enables some mechanics that change behavior depending on hardcoded level numbers.
  * TODO: separate this into separate defines, behavior params, or make these mechanics otherwise dynamic.
@@ -28,12 +30,12 @@
 /**
  * Air/breath meter is separate from health meter when underwater.
  */
-// #define BREATH_METER
+#define BREATH_METER
 
 /**
  * Number of coins to spawn the "100 coin" star. If you remove the define altogether, then there won't be a 100 coin star at all.
  */
-#define X_COIN_STAR 100
+// #define X_COIN_STAR 100
 
 /**
  * Stars don't kick you out of the level (does not play nicely with vanilla).
@@ -63,12 +65,12 @@
 /**
  * Makes signs and NPCs easier to talk to.
  */
-// #define EASIER_DIALOG_TRIGGER
+#define EASIER_DIALOG_TRIGGER
 
 /**
  * Shows an "A" when Mario is able to talk [requires EASIER_DIALOG_TRIGGER].
  */
-// #define DIALOG_INDICATOR
+#define DIALOG_INDICATOR
 
 /**
  * Include the English characters that were missing from US segment2 and the rumble pak texture if using rumble.

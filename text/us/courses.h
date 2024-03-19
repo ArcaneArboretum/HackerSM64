@@ -1,7 +1,7 @@
 
        
-COURSE_ACTS(COURSE_BOB, _(" 2 Inside the Mansion"),
-       _("FIND LUIGI!")                   , _("RED COINS ON A GHOST HUNT")     , _(""),
+COURSE_ACTS(COURSE_BOB, _(" 1 BOB"),
+       _("Bobbery's Battle for Bikini Bottom") , _("Coins for Bob the Bomb")   , _(""),
        _("")                              , _("")                              , _(""))
 
 COURSE_ACTS(COURSE_WF, _(" 2 WHOMP'S FORTRESS"),
@@ -71,9 +71,9 @@ SECRET_STAR(COURSE_WMOTR, _("   WING MARIO OVER THE RAINBOW"))
 SECRET_STAR(COURSE_SA, _("   THE SECRET AQUARIUM"))
 SECRET_STAR(COURSE_CAKE_END, _(""))
 
-CASTLE_SECRET_STARS(_("MANSION 100 COIN STAR"))
+CASTLE_SECRET_STARS(_(""))
 
-EXTRA_TEXT(0, _("ONE OF THE CASTLE'S SECRET STARS!"))
+EXTRA_TEXT(0, _(""))
 EXTRA_TEXT(1, _(""))
 EXTRA_TEXT(2, _(""))
 EXTRA_TEXT(3, _(""))

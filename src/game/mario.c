@@ -1450,9 +1450,9 @@ void update_mario_health(struct MarioState *m) {
 #endif
                 }
 
-                // When mario is actively in vanish cap, drain his HP over time similar to losing breath underwater
+                // When mario is actively in vanish cap, drain his HP over time, 2x as fast as swimming underwater
                 if(m->flags & MARIO_VANISH_CAP) {
-                    m->health -= 1;
+                    m->health -= 2;
                 }
             }
         }

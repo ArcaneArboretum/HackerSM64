@@ -29,18 +29,8 @@ playing it!\n\
 \
 Hack Made by\n\
 ArcaneArboretum\n\
-with advice from\n\
-\n\
-\
-someone2639,\n\
-deathray9000,\n\
-and the rest\n\
-\n\
-\
-of the romhacking.com\n\
-discord and resources!\n\
-\n\
-\n\
+with advice from the\n\
+romhacking.com discord.\n\
 \
 Textures for the hack\n\
 were provided by\n\
@@ -84,24 +74,24 @@ I mean...\n\
 \n\
 \n\
 \
-You didn't quite have\n\
-time to finish baking\n\
-so to speak, so you\n\
-might find yourself\n\
-a little gooey still.\n\
-Heh, heh.\n\
+Unforunately, your DNA\n\
+got mixed a bit with\n\
+some ghost genes, so\n\
+you might find that\n\
+you're a bit out of\n\
+phase.\n\
 \
-I also made a couple\n\
-'improvements' over the\n\
-original model,\n\
-if I do say so myself.\n\
+Maybe I should've\n\
+called you 'Booigi'!\n\
+Heh, heh.\n\
 \n\
 \n\
+Heh.\n\
 \
 If you need some time\n\
 to get used to your new\n\
 self, why don't you head\n\
-on into my lab behind\n\
+on into the lab behind\n\
 me and figure those new\n\
 skills of yours out first.\n\
 \
@@ -128,12 +118,8 @@ Gate's closed\n\
 for a reason.\n\
 \
 That means\n\
-NO ENTRY ALLOWED!\n\
-\n\
-\
-You definitely shouldn't\n\
-go gooey and walk right\n\
-on through...\n\
+ONLY GHOSTS\n\
+ALLOWED!\n\
 \
 I MEAN IT!\n\
 NOW SCRAM!"))
@@ -156,19 +142,19 @@ Do you want to Save?\n\
 
 // - Sign
 DEFINE_DIALOG(DIALOG_005, 1, 6, 30, 200, _("\
-There are 5 stars in this\n\
+There are 4 stars in this\n\
 hack, one at the end of\n\
 each of 2 slide areas, \n\
 and one for getting\n\
 6 out of 8 red coins\n\
 on each slide.\n\
 \
-There is also a\n\
-100 coin star\n\
-in the main hub area, \n\
-but not in any\n\
-of the slides.\n\
-\n\
+There are no\n\
+100 coin stars.\n\
+But that doesn't\n\
+mean you can't\n\
+try for a coin\n\
+high score!\n\
 \
 The red coin stars\n\
 are a bit tougher than\n\
@@ -184,25 +170,11 @@ I recommend just going\n\
 for the regular stars\n\
 at the end of each slide.\n\
 \
-Feel free to explore\n\
-around the hub and try\n\
-to find a way onto\n\
-the roof of the mansion\n\
-for a fun surprise!\n\
-\n\
-\
-You might need to learn\n\
-a few new moves from\n\
-E.Gadd's Labratory\n\
-before you try for the\n\
-100 coin star though!\n\
-\n\
-\
+When you're done,\n\
+make your way to the\n\
+roof to end the game!\n\
 Now, go talk to E.Gadd\n\
 to get started!\n\
-\n\
-\n\
-\n\
 ...and have fun!"))
 
 // - E.Gadd
@@ -223,18 +195,18 @@ abilities for you."))
 // - Sign
 DEFINE_DIALOG(DIALOG_007, 1, 5, 30, 200, _("\
 First things first,\n\
-since you didn't get\n\
-to spend a full cycle\n\
-in the clone machine,\n\
-you're still a bit gooey.\n\
+since your DNA got\n\
+mixed up with one of\n\
+my painting ghosts,\n\
+you've gone ghastly.\n\
 \
 This makes you perfect\n\
-for fitting through\n\
+for slipping through\n\
 grates like the one\n\
 in front of you.\n\
 \n\
 \
-Just press L to go gooey,\n\
+Just press L to go ghost,\n\
 then you can walk\n\
 straight through it!\n\
 Neat, huh?\n\
@@ -243,18 +215,18 @@ Neat, huh?\n\
 Press L again to\n\
 turn solid whenever\n\
 you need.\n\
-Gootastic!\n\
+Bootastic!\n\
 \n\
 \
 Careful, though!\n\
-Stay gooey for too\n\
+Stay ghostly for too\n\
 long and you won't\n\
 be able to turn back!\n\
 Watch your health!\n\
 \
-'Goo' ahead and slide down\n\
-to the next section when\n\
-you're ready.\n\
+'Ghost' ahead and slide on\n\
+down to the next section\n\
+when you're ready.\n\
 \n\
 \n\
 \
@@ -265,15 +237,15 @@ before you go!"))
 // - Sign
 DEFINE_DIALOG(DIALOG_008, 1, 5, 30, 200, _("\
 You must really have\n\
-a handle on your goo\n\
+a handle on your ghost\n\
 form if you've made\n\
 it this far.\n\
-Goo-rate Job!\n\
+Great Job!\n\
 \
 Next, I'll teach you\n\
-one of those\n\
-'improvements' I\n\
-mentioned.\n\
+a new skill, courtesy\n\
+of your new ghost form.\n\
+\n\
 \n\
 \
 Press [A] when\n\
@@ -307,7 +279,7 @@ platforms with ease!\n\
 \n\
 \
 Oh, and don't forget\n\
-you can go gooey while\n\
+you can go ghost while\n\
 twirling too!\n\
 \n\
 \n\
@@ -364,33 +336,33 @@ I just put it up."))
 DEFINE_DIALOG(DIALOG_011, 1, 5, 30, 200, _("\
 Alrighty, time I shared\n\
 the last of your\n\
-'improvements' 2uigi!\n\
+ghostly changes 2uigi!\n\
 You might have figured\n\
 one of them out already.\n\
 \
 Did you know that you're\n\
-immune to fire while in\n\
-goo form?\n\
-Talk about too cool to\n\
-be burned!\n\
-\
-Next, have you noticed\n\
-you don't take any\n\
-damage when falling\n\
-from extreme heights?\n\
+immune to damage while\n\
+in ghost form?\n\
+\n\
 \n\
 \
-You can thank your\n\
-gooey self for that!\n\
-Even when not fully\n\
-gooey, you retain\n\
-some springiness!\n\
+Even the ghosts of the\n\
+mansion shouldn't be\n\
+able to hurt you!\n\
+\n\
+\n\
+\
+You're also a bit\n\
+lighter than you're\n\
+other self, so you\n\
+should be capable\n\
+of new jump dives!\n\
 \
 Press [B] while still\n\
-in the air after ground-\n\
-pounding and you'll\n\
-spring out in whatever\n\
-direction you hold.\n\
+in the air after starting\n\
+a ground-pound and\n\
+you'll dive in whatever\n\
+direction you like.\n\
 \
 Use this technique\n\
 to reach new distances\n\
@@ -541,10 +513,16 @@ That can't be right...\n\
 \
 I thought I got\n\
 rid of you already!\n\
-\n\
+Are you... a ghost?\n\
 \
-No matter, you won't\n\
-escape your painting\n\
-again!\n\
+No way! Whatever,\n\
+you won't escape your\n\
+painting again!\n\
 \
 Get em, Boos!"))
+
+DEFINE_DIALOG(DIALOG_032, 1, 4, 30, 200, _("\
+Watch out!\n\
+That foggy doorway\n\
+leads to the end\n\
+of the game!"))
