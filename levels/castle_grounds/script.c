@@ -81,7 +81,6 @@ const LevelScript level_castle_grounds_entry[] = {
 		OBJECT(MODEL_YELLOW_COIN, 105, 3288, -2528, 0, 90, 0, 0x00000000, bhvYellowCoin),
 		OBJECT(MODEL_YELLOW_COIN, -745, 3288, -2613, 0, 90, 0, 0x00000000, bhvYellowCoin),
 		OBJECT(MODEL_YELLOW_COIN, 68, 1879, -2599, 0, 90, 0, 0x00000000, bhvYellowCoin),
-		OBJECT(MODEL_HAUNTED_CAGE, 103, 3723, -4170, 0, 0, 0, 0x00000000, bhvBooCage),
 		OBJECT(MODEL_NONE, -474, 539, -941, 0, -29, 0, (DIALOG_013 << 16), bhvMessagePanel),
 		OBJECT(MODEL_NONE, -1192, 682, -1206, 0, 44, 0, (DIALOG_014 << 16), bhvMessagePanel),
 		OBJECT(MODEL_NONE, -650, 867, -1373, 0, -9, 0, (DIALOG_015 << 16), bhvMessagePanel),

@@ -18,7 +18,7 @@ PirateSoftware!\n\
 \n\
 \
 This is my first hack!\n\
-It's also my first time\n\
+and also my first time\n\
 making a game at all.\n\
 \n\
 \
@@ -29,8 +29,18 @@ playing it!\n\
 \
 Hack Made by\n\
 ArcaneArboretum\n\
-with advice from the\n\
-romhacking discord.\n\
+with advice from\n\
+\n\
+\
+someone2639,\n\
+deathray9000,\n\
+and the rest\n\
+\n\
+\
+of the romhacking.com\n\
+discord and resources!\n\
+\n\
+\n\
 \
 Textures for the hack\n\
 were provided by\n\
@@ -139,8 +149,8 @@ Thanks for playing!"))
 // - N/A
 DEFINE_DIALOG(DIALOG_004, 1, 5, 30, 200, _("\
 You've collected 100\n\
-coins! 2uigi's powers\n\
-turn them into a Star!\n\
+coins! 2uigi celebrates the\n\
+accomplishment with a Star!\n\
 Do you want to Save?\n\
 //Yes////No"))
 
@@ -160,23 +170,9 @@ but not in any\n\
 of the slides.\n\
 \n\
 \
-You might need to learn\n\
-a few new moves from\n\
-E.Gadd's Labratory\n\
-before you try for the\n\
-100 coin star!\n\
-\n\
-\
-You'll need 3 stars\n\
-to finish the game!\n\
-\n\
-\n\
-\n\
-\n\
-\
 The red coin stars\n\
 are a bit tougher than\n\
-the rest of the game,\n\
+the rest of the hack,\n\
 so if you're new to\n\
 SM64 Romhacks or you\n\
 are playing on a\n\
@@ -188,6 +184,20 @@ I recommend just going\n\
 for the regular stars\n\
 at the end of each slide.\n\
 \
+Feel free to explore\n\
+around the hub and try\n\
+to find a way onto\n\
+the roof of the mansion\n\
+for a fun surprise!\n\
+\n\
+\
+You might need to learn\n\
+a few new moves from\n\
+E.Gadd's Labratory\n\
+before you try for the\n\
+100 coin star though!\n\
+\n\
+\
 Now, go talk to E.Gadd\n\
 to get started!\n\
 \n\
@@ -198,7 +208,7 @@ to get started!\n\
 // - E.Gadd
 DEFINE_DIALOG(DIALOG_006, 1, 6, 30, 200, _("\
 Good idea 2uigi!\n\
-Head through my\n\
+Head through my simple\n\
 training course for a star\n\
 and collect at least\n\
 6 of the 8 red coins\n\
@@ -524,30 +534,17 @@ Subway Koopa -\n\
 slinging phat rhymes\n\
 to a group 'a troopas."))
 
-DEFINE_DIALOG(DIALOG_031, 1, 4, 30, 200, _("\
+DEFINE_DIALOG(DIALOG_031, 1, 3, 30, 200, _("\
+HAHAHAHAA!\n\
 Wait, Luigi?\n\
 That can't be right...\n\
+\
 I thought I got\n\
 rid of you already!\n\
+\n\
 \
 No matter, you won't\n\
 escape your painting\n\
 again!\n\
-\n\
-\
-Without your stupid\n\
-Poltergust, you can't\n\
-hurt us!\n\
-\n\
-\
-And you'll go right\n\
-back into your\n\
-painting at the\n\
-top of the mansion!\n\
-\
-Without at least\n\
-3 stars, you'll never\n\
-get in or out\n\
-of there!\n\
 \
 Get em, Boos!"))
