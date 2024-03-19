@@ -55,9 +55,9 @@ static s32 boo_should_be_active(void) {
     f32 activationRadius;
 
     if (cur_obj_has_behavior(bhvBalconyBigBoo)) {
-        activationRadius = 5000.0f;
+        activationRadius = 8000.0f;
     } else {
-        activationRadius = 4000.0f;
+        activationRadius = 6000.0f;
     }
 
     if (cur_obj_has_behavior(bhvMerryGoRoundBigBoo) || cur_obj_has_behavior(bhvMerryGoRoundBoo)) {
@@ -300,13 +300,16 @@ static s32 boo_update_during_death(void) {
     return FALSE;
 }
 
+/* Boo Attacked Type Not Needed as Boo's are Now Invincible 
 static s32 obj_has_attack_type(u32 attackType) {
     return (o->oInteractStatus & INT_STATUS_ATTACK_MASK) == attackType;
 }
+*/
 
 static s32 boo_get_attack_status(void) {
     s32 attackStatus = BOO_NOT_ATTACKED;
 
+/* Make Boo's invincible
     if (o->oInteractStatus & INT_STATUS_INTERACTED) {
         if ((o->oInteractStatus & INT_STATUS_WAS_ATTACKED)
             && !obj_has_attack_type(ATTACK_FROM_ABOVE)) {
@@ -325,7 +328,7 @@ static s32 boo_get_attack_status(void) {
             attackStatus = BOO_BOUNCED_ON;
         }
     }
-
+*/
     return attackStatus;
 }
 
@@ -336,19 +339,19 @@ static void boo_chase_mario(f32 minDY, s16 yawIncrement, f32 mul) {
     if (boo_vanish_or_appear()) {
         o->oInteractType = INTERACT_BOUNCE_TOP;
 
-        if (cur_obj_lateral_dist_from_mario_to_home() > 3000.0f) {
+        if (cur_obj_lateral_dist_from_mario_to_home() > 6000.0f) {
             targetYaw = cur_obj_angle_to_home();
         } else {
             targetYaw = o->oAngleToMario;
         }
 
-        cur_obj_rotate_yaw_toward(targetYaw, yawIncrement);
+        cur_obj_rotate_yaw_toward(targetYaw, yawIncrement * 2.5f);
         o->oVelY = 0.0f;
 
         if (!mario_is_in_air_action()) {
             f32 dy = o->oPosY - gMarioObject->oPosY;
             if ((minDY < dy) && (dy < 500.0f)) {
-                o->oVelY = increment_velocity_toward_range(o->oPosY, gMarioObject->oPosY + 50.0f, 10.0f, 20.0f);
+                o->oVelY = increment_velocity_toward_range(o->oPosY, gMarioObject->oPosY + 50.0f, 10.0f, 10.0f);
             }
         }
 
