@@ -463,3 +463,88 @@ I mean...\n\
 \n\
 \
 ... go save Luigi!"))
+
+// - Grave Sign
+DEFINE_DIALOG(DIALOG_013, 1, 4, 30, 200, _("\
+Here rests\n\
+dear Melissa - \n\
+Lord knows\n\
+I really miss ya."))
+
+// - Grave Sign
+DEFINE_DIALOG(DIALOG_014, 1, 4, 30, 200, _("\
+Here lies\n\
+Steve Jobs - \n\
+He died\n\
+of ligma."))
+
+// - Grave Sign
+DEFINE_DIALOG(DIALOG_015, 1, 4, 30, 200, _("\
+Poor old Luigi\n\
+saw a ghost - \n\
+died of fright\n\
+and screamed the most."))
+
+// - Grave Sign
+DEFINE_DIALOG(DIALOG_016, 1, 4, 30, 200, _("\
+Rest in peace\n\
+SimpleFlips -\n\
+We all know you\n\
+can BLJ off this."))
+
+// - Grave Sign
+DEFINE_DIALOG(DIALOG_017, 1, 4, 30, 200, _("\
+Dear sweet Leota\n\
+beloved by all -\n\
+in regions beyond now\n\
+having a ball."))
+
+// - Grave Sign
+DEFINE_DIALOG(DIALOG_018, 1, 4, 30, 200, _("\
+Ethan\n\
+Please Wake Up - \n\
+You Are In\n\
+A Coma."))
+
+// - Grave Sign
+DEFINE_DIALOG(DIALOG_019, 1, 4, 30, 200, _("\
+Master Gracey\n\
+laid to rest - \n\
+No mourning please,\n\
+at his request."))
+
+// DIALOG_020 is reserved for Peach's Intro Letter, skipping it here
+DEFINE_DIALOG(DIALOG_020, 1, 4, 30, 200, _(""))
+
+// DIALOG_021 - DIALOG_029 are reserved for door cutscene texts, skipping them here
+DEFINE_DIALOG(DIALOG_021, 1, 4, 30, 200, _(""))
+DEFINE_DIALOG(DIALOG_022, 1, 4, 30, 200, _(""))
+DEFINE_DIALOG(DIALOG_023, 1, 4, 30, 200, _(""))
+DEFINE_DIALOG(DIALOG_024, 1, 4, 30, 200, _(""))
+DEFINE_DIALOG(DIALOG_025, 1, 4, 30, 200, _(""))
+DEFINE_DIALOG(DIALOG_026, 1, 4, 30, 200, _(""))
+DEFINE_DIALOG(DIALOG_027, 1, 4, 30, 200, _(""))
+DEFINE_DIALOG(DIALOG_028, 1, 4, 30, 200, _(""))
+DEFINE_DIALOG(DIALOG_029, 1, 4, 30, 200, _(""))
+
+// - Grave Sign
+DEFINE_DIALOG(DIALOG_030, 1, 4, 30, 200, _("\
+R.I.P.\n\
+Subway Koopa -\n\
+slinging phat rhymes\n\
+to a group 'a troopas."))
+
+DEFINE_DIALOG(DIALOG_031, 1, 3, 30, 200, _("\
+HAHAHAHAA!\n\
+Wait, Luigi?\n\
+That can't be right...\n\
+\
+I thought I got\n\
+rid of you already!\n\
+\n\
+\
+No matter, you won't\n\
+escape your painting\n\
+again!\n\
+\
+Get em, Boos!"))

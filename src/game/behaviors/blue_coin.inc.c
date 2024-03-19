@@ -55,9 +55,9 @@ void bhv_hidden_blue_coin_loop(void) {
                 obj_mark_for_deletion(o);
             }
 
-            // After 200 frames of waiting and 20 2-frame blinks (for 240 frames total),
+            // After 400 frames of waiting and 40 2-frame blinks (for 480 frames total),
             // delete the object.
-            if (cur_obj_wait_then_blink(200, 20)) {
+            if (cur_obj_wait_then_blink(400, 40)) {
 #ifdef BLUE_COIN_SWITCH_RETRY
                 o->oAction = HIDDEN_BLUE_COIN_ACT_INACTIVE;
                 o->header.gfx.node.flags &= ~GRAPH_RENDER_INVISIBLE;
@@ -140,7 +140,7 @@ void bhv_blue_coin_switch_loop(void) {
 
         case BLUE_COIN_SWITCH_ACT_TICKING:
             // Tick faster when the blue coins start blinking
-            if (o->oTimer < 200) {
+            if (o->oTimer < 400) {
                 play_sound(SOUND_GENERAL2_SWITCH_TICK_FAST, gGlobalSoundSource);
             } else {
                 play_sound(SOUND_GENERAL2_SWITCH_TICK_SLOW, gGlobalSoundSource);
@@ -150,7 +150,7 @@ void bhv_blue_coin_switch_loop(void) {
                 spawn_mist_particles_variable(0, 0, 46.0f);
                 obj_mark_for_deletion(o);
             // Set to BLUE_COIN_SWITCH_ACT_EXTENDING after the coins unload after the 240-frame timer expires.
-            } else if (o->oTimer > 240) {
+            } else if (o->oTimer > 480) {
                 o->oAction  = BLUE_COIN_SWITCH_ACT_EXTENDING;
                 o->oVelY    = 16.0f;
                 o->oGravity =  0.0f;
@@ -170,7 +170,7 @@ void bhv_blue_coin_switch_loop(void) {
 #else
             // Delete the switch (which stops the sound) after the last coin is collected,
             // or after the coins unload after the 240-frame timer expires.
-            if ((cur_obj_nearest_object_with_behavior(bhvHiddenBlueCoin) == NULL) || (o->oTimer > 240)) {
+            if ((cur_obj_nearest_object_with_behavior(bhvHiddenBlueCoin) == NULL) || (o->oTimer > 480)) {
                 obj_mark_for_deletion(o);
             }
 #endif

@@ -57,7 +57,7 @@ static s32 boo_should_be_active(void) {
     if (cur_obj_has_behavior(bhvBalconyBigBoo)) {
         activationRadius = 5000.0f;
     } else {
-        activationRadius = 1500.0f;
+        activationRadius = 4000.0f;
     }
 
     if (cur_obj_has_behavior(bhvMerryGoRoundBigBoo) || cur_obj_has_behavior(bhvMerryGoRoundBoo)) {
@@ -336,7 +336,7 @@ static void boo_chase_mario(f32 minDY, s16 yawIncrement, f32 mul) {
     if (boo_vanish_or_appear()) {
         o->oInteractType = INTERACT_BOUNCE_TOP;
 
-        if (cur_obj_lateral_dist_from_mario_to_home() > 1500.0f) {
+        if (cur_obj_lateral_dist_from_mario_to_home() > 3000.0f) {
             targetYaw = cur_obj_angle_to_home();
         } else {
             targetYaw = o->oAngleToMario;
@@ -348,11 +348,11 @@ static void boo_chase_mario(f32 minDY, s16 yawIncrement, f32 mul) {
         if (!mario_is_in_air_action()) {
             f32 dy = o->oPosY - gMarioObject->oPosY;
             if ((minDY < dy) && (dy < 500.0f)) {
-                o->oVelY = increment_velocity_toward_range(o->oPosY, gMarioObject->oPosY + 50.0f, 10.0f, 2.0f);
+                o->oVelY = increment_velocity_toward_range(o->oPosY, gMarioObject->oPosY + 50.0f, 10.0f, 20.0f);
             }
         }
 
-        cur_obj_set_vel_from_mario_vel(10.0f - o->oBooNegatedAggressiveness, mul);
+        cur_obj_set_vel_from_mario_vel(100.0f - o->oBooNegatedAggressiveness, mul);
 
         if (o->oForwardVel != 0.0f) {
             boo_oscillate(FALSE);
