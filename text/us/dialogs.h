@@ -35,7 +35,17 @@ romhacking.com discord.\n\
 Textures for the hack\n\
 were provided by\n\
 MrGreenThunder\n\
-on SMWCentral.net."))
+on SMWCentral.net.\n\
+\
+Music is all\n\
+owned by Nintendo.\n\
+\n\
+\n\
+\
+Luigi's Mansion\n\
+and characters therein\n\
+are copyright\n\
+of Nintendo."))
 
 // - E.Gadd
 DEFINE_DIALOG(DIALOG_001, 1, 6, 105, 200, _("\
@@ -49,15 +59,15 @@ would be.\n\
 The real Luigi went\n\
 into that mansion\n\
 a couple hours ago\n\
-with my Poltergust 3000\n\
+with the Poltergust 3000\n\
 and hasn't come back.\n\
 \n\
 \
-I created you as a clone\n\
-from Luigi's DNA so you\n\
-could go in there and\n\
-find my Poltergust...\n\
-\n\
+E.Gadd created you as\n\
+a clone from Luigi's\n\
+DNA so you could go\n\
+in there and\n\
+find his Poltergust...\n\
 \n\
 \
 I mean...\n\
@@ -81,10 +91,10 @@ you might find that\n\
 you're a bit out of\n\
 phase.\n\
 \
-Maybe I should've\n\
-called you 'Booigi'!\n\
+Maybe E.Gadd\n\
+should've named you\n\
+'Booigi'!\n\
 Heh, heh.\n\
-\n\
 \n\
 Heh.\n\
 \
@@ -96,7 +106,7 @@ me and figure those new\n\
 skills of yours out first.\n\
 \
 Then, head to the mansion\n\
-and recover my poltergust!\n\
+and recover the poltergust!\n\
 \n\
 \n\
 \n\
@@ -128,7 +138,7 @@ NOW SCRAM!"))
 DEFINE_DIALOG(DIALOG_003, 1, 5, 95, 200, _("\
 Great job!\n\
 You collected\n\
-all 5 Stars\n\
+all 4 Stars\n\
 in Super 2uigi 62.\n\
 Thanks for playing!"))
 
@@ -173,7 +183,7 @@ at the end of each slide.\n\
 When you're done,\n\
 make your way to the\n\
 roof to end the game!\n\
-Now, go talk to E.Gadd\n\
+Now, go talk to Toad\n\
 to get started!\n\
 ...and have fun!"))
 
@@ -515,9 +525,17 @@ I thought I got\n\
 rid of you already!\n\
 Are you... a ghost?\n\
 \
-No way! Whatever,\n\
-you won't escape your\n\
-painting again!\n\
+No way! Whatever, King Boo\n\
+is busy at the top of\n\
+the mansion right now,\n\
+\
+so I guess that leaves\n\
+it up to me to deal\n\
+with the likes of you!\n\
+\
+And BOOLOSSUS\n\
+would never fail\n\
+his king!\n\
 \
 Get em, Boos!"))
 

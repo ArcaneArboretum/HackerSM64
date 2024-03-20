@@ -93,7 +93,7 @@ const LevelScript level_castle_grounds_entry[] = {
 		OBJECT(MODEL_NONE, 705, 561, -1172, 0, -15, 0, (DIALOG_019 << 16), bhvMessagePanel),
 		OBJECT(MODEL_NONE, 1573, 452, -1469, 0, -39, 0, (DIALOG_030 << 16), bhvMessagePanel),
 		MARIO_POS(0x01, -180, 0, 200, 5368),
-		OBJECT(MODEL_BOBOMB_BUDDY, -250, 91, 2367, 0, -140, 0, (DIALOG_001 << 16), bhvBobombBuddy),
+		OBJECT(MODEL_TOAD, -289, 75, 2643, 0, 68, 0, (DIALOG_001 << 24), bhvToadMessage),
 		OBJECT(MODEL_WOODEN_SIGNPOST, -429, 112, 4716, 0, 36, 0, (DIALOG_000 << 16), bhvMessagePanel),
 		OBJECT(MODEL_WOODEN_SIGNPOST, -49, 3701, -4010, 0, 30, 0, (DIALOG_032 << 16), bhvMessagePanel),
 		OBJECT(MODEL_WOODEN_SIGNPOST, -508, 14, 613, 0, 20, 0, (DIALOG_002 << 16), bhvMessagePanel),

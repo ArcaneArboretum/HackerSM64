@@ -208,7 +208,7 @@ Gfx *geo_switch_peach_eyes(s32 callContext, struct GraphNode *node, UNUSED s32 c
  */
 s32 get_star_collection_dialog(struct MarioState *m) {
     s32 dialogID = 0;
-    s8 numStarsRequired = 5;
+    s8 numStarsRequired = 4;
 
     if(m->numStars >= numStarsRequired) {
         dialogID = DIALOG_003;

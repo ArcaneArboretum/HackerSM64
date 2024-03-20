@@ -86,7 +86,7 @@ enum DialogSpeakers {
 
 u8 sDialogSpeaker[] = {
     //     0      1      2      3      4      5      6      7      8      9
-    /* 0*/ _,     YOSHI, _,     _,     _,     _,     YOSHI, _,     _,     _,
+    /* 0*/ _,     _,     _,     _,     _,     _,     _,     _,     _,     _,
     /* 1*/ _,     _,     _,     BOO,   BOO,   BOO,   BOO,   BOO,   BOO,   BOO,
     /* 2*/ _,     _,     _,     _,     _,     _,     _,     _,     _,     _,
     /* 3*/ BOO,   BOO,   _,     _,     _,     _,     _,     TUXIE, _,     _,
@@ -2497,12 +2497,11 @@ void play_race_fanfare(void) {
  * Called from threads: thread5_game_loop
  */
 void play_toads_jingle(void) {
-    seq_player_play_sequence(SEQ_PLAYER_ENV, SEQ_EVENT_TOAD_MESSAGE, 0);
-    sBackgroundMusicMaxTargetVolume = TARGET_VOLUME_IS_PRESENT_FLAG | 20;
-#if defined(VERSION_EU) || defined(VERSION_SH)
-    D_EU_80300558 = 2;
-#endif
-    begin_background_music_fade(50);
+    play_music(SEQ_PLAYER_LEVEL, (0 << 8) | SEQ_EVENT_TOAD_MESSAGE, 0);
+}
+
+void end_toads_jingle(void) {
+    stop_background_music(SEQ_EVENT_TOAD_MESSAGE);
 }
 
 /**

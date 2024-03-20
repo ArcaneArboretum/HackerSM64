@@ -191,16 +191,16 @@
  * File Select Text
  */
 // Main Screens
-#define TEXT_MARIO _("MARIO") // View Score Menu
+#define TEXT_MARIO _("2UIGI") // View Score Menu
 #define TEXT_SELECT_FILE _("SELECT FILE")
 #define TEXT_CHECK_FILE _("CHECK FILE")
 #define TEXT_COPY_FILE _("COPY FILE")
 #define TEXT_ERASE_FILE _("ERASE FILE")
 #define TEXT_SOUND_SELECT _("SOUND SELECT")
-#define TEXT_FILE_MARIO_A _("MARIO A")
-#define TEXT_FILE_MARIO_B _("MARIO B")
-#define TEXT_FILE_MARIO_C _("MARIO C")
-#define TEXT_FILE_MARIO_D _("MARIO D")
+#define TEXT_FILE_MARIO_A _("2UIGI A")
+#define TEXT_FILE_MARIO_B _("2UIGI B")
+#define TEXT_FILE_MARIO_C _("2UIGI C")
+#define TEXT_FILE_MARIO_D _("2UIGI D")
 
 // Menu Options
 #define TEXT_SCORE _("SCORE")
@@ -213,7 +213,7 @@
 #define TEXT_HEADSET _("HEADSET")
 
 // Misc Menu Text
-#define TEXT_SAVED_DATA_EXISTS _("SAVED DATA EXITS") // Misspell
+#define TEXT_SAVED_DATA_EXISTS _("SAVED DATA EXISTS") // Misspell
 #define TEXT_NO_SAVED_DATA_EXISTS _("NO SAVED DATA EXISTS")
 
 // Inside a Menu
@@ -240,7 +240,7 @@
 #define TEXT_SURE _("SURE?")
 #define TEXT_YES _("YES")
 #define TEXT_NO _("NO")
-#define TEXT_FILE_MARIO_A_JUST_ERASED _("MARIO A JUST ERASED")
+#define TEXT_FILE_MARIO_A_JUST_ERASED _("2UIGI A JUST ERASED")
 
 /**
  * Menus Text (Pause, Course Completed)
@@ -452,32 +452,32 @@
 /**
  * Course Table names for Score Menu Save view
  */
-#define TEXT_MENU_BOB _(" 1 BOB-OMB BATTLEFIELD")
-#define TEXT_MENU_WF _(" 2 WHOMP'S FORTRESS")
-#define TEXT_MENU_JRB _(" 3 JOLLY ROGER BAY")
-#define TEXT_MENU_CCM _(" 4 COOL, COOL MOUNTAIN")
-#define TEXT_MENU_BBH _(" 5 BIG BOO'S HAUNT")
-#define TEXT_MENU_HMC _(" 6 HAZY MAZE CAVE")
-#define TEXT_MENU_LLL _(" 7 LETHAL LAVA LAND")
-#define TEXT_MENU_SSL _(" 8 SHIFTING SAND LAND")
-#define TEXT_MENU_DDD _(" 9 DIRE, DIRE DOCKS")
-#define TEXT_MENU_SL _("10 SNOWMAN'S LAND")
-#define TEXT_MENU_WDW _("11 WET-DRY WORLD")
-#define TEXT_MENU_TTM _("12 TALL, TALL MOUNTAIN")
-#define TEXT_MENU_THI _("13 TINY-HUGE ISLAND")
-#define TEXT_MENU_TTC _("14 TICK TOCK CLOCK")
-#define TEXT_MENU_RR _("15 RAINBOW RIDE")
-#define TEXT_MENU_BITDW _("   BOWSER IN THE DARK WORLD")
-#define TEXT_MENU_BITFS _("   BOWSER IN THE FIRE SEA")
-#define TEXT_MENU_BITS _("   BOWSER IN THE SKY")
-#define TEXT_MENU_PSS _("   THE PRINCESS'S SECRET SLIDE")
-#define TEXT_MENU_COTMC _("   CAVERN OF THE METAL CAP")
-#define TEXT_MENU_TOTWC _("   TOWER OF THE WING CAP")
-#define TEXT_MENU_VCUTM _("   VANISH CAP UNDER THE MOAT")
-#define TEXT_MENU_WMOTR _("   WING MARIO OVER THE RAINBOW")
-#define TEXT_MENU_SA _("   THE SECRET AQUARIUM")
+#define TEXT_MENU_BOB _("")
+#define TEXT_MENU_WF _("")
+#define TEXT_MENU_JRB _("")
+#define TEXT_MENU_CCM _(" 1 E.GADD'S LABORATORY")
+#define TEXT_MENU_BBH _(" 2 INSIDE THE MANSION")
+#define TEXT_MENU_HMC _("")
+#define TEXT_MENU_LLL _("")
+#define TEXT_MENU_SSL _("")
+#define TEXT_MENU_DDD _("")
+#define TEXT_MENU_SL _("")
+#define TEXT_MENU_WDW _("")
+#define TEXT_MENU_TTM _("")
+#define TEXT_MENU_THI _("")
+#define TEXT_MENU_TTC _("")
+#define TEXT_MENU_RR _("")
+#define TEXT_MENU_BITDW _("")
+#define TEXT_MENU_BITFS _("")
+#define TEXT_MENU_BITS _("")
+#define TEXT_MENU_PSS _("")
+#define TEXT_MENU_COTMC _("")
+#define TEXT_MENU_TOTWC _("")
+#define TEXT_MENU_VCUTM _("")
+#define TEXT_MENU_WMOTR _("")
+#define TEXT_MENU_SA _("")
 #define TEXT_MENU_NONE _("")
-#define TEXT_MENU_STARS _("   CASTLE SECRET STARS")
+#define TEXT_MENU_STARS _("")
 
 #define TEXT_MENU_BOB_FR _(" 1 BATAILLE DE BOB-OMB")
 #define TEXT_MENU_WF_FR _(" 2 FORTERESSE DE WHOMP")
