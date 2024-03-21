@@ -86,7 +86,7 @@ enum DialogSpeakers {
 
 u8 sDialogSpeaker[] = {
     //     0      1      2      3      4      5      6      7      8      9
-    /* 0*/ _,     _,     _,     _,     _,     _,     _,     _,     _,     _,
+    /* 0*/ _,     _,     BOO,   _,     _,     _,     _,     _,     _,     _,
     /* 1*/ _,     _,     _,     BOO,   BOO,   BOO,   BOO,   BOO,   BOO,   BOO,
     /* 2*/ _,     _,     _,     _,     _,     _,     _,     _,     _,     _,
     /* 3*/ BOO,   BOO,   _,     _,     _,     _,     _,     TUXIE, _,     _,

@@ -50,11 +50,18 @@ of Nintendo."))
 // - E.Gadd
 DEFINE_DIALOG(DIALOG_001, 1, 6, 105, 200, _("\
 Hey 2uigi!\n\
-Confused?\n\
-I figured you\n\
-would be.\n\
 \n\
 \n\
+\n\
+\n\
+\n\
+\
+Yeah, you heard me right!\n\
+'2uigi', as in, Luigi #2.\n\
+I figured you'd be a\n\
+little confused by that,\n\
+so I told E.Gadd I'd\n\
+wait for you out here.\n\
 \
 The real Luigi went\n\
 into that mansion\n\
@@ -94,9 +101,30 @@ phase.\n\
 Maybe E.Gadd\n\
 should've named you\n\
 'Booigi'!\n\
-Heh, heh.\n\
+Heh, heh ...\n\
 \n\
-Heh.\n\
+... Heh.\n\
+\
+Yeah, he told me that\n\
+name was lame...\n\
+\n\
+\n\
+\n\
+\n\
+\
+... Forget I said\n\
+anything...\n\
+\n\
+\n\
+\n\
+\n\
+\
+... Anyways ...\n\
+\n\
+\n\
+\n\
+\n\
+\n\
 \
 If you need some time\n\
 to get used to your new\n\
@@ -140,7 +168,11 @@ Great job!\n\
 You collected\n\
 all 4 Stars\n\
 in Super 2uigi 62.\n\
-Thanks for playing!"))
+Thanks for playing!\n\
+\
+Head to the top of\n\
+the mansion for the\n\
+end game screen!"))
 
 // - N/A
 DEFINE_DIALOG(DIALOG_004, 1, 5, 30, 200, _("\
