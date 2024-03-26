@@ -37,9 +37,9 @@ were provided by\n\
 MrGreenThunder\n\
 on SMWCentral.net.\n\
 \
-Music is all\n\
-owned by Nintendo.\n\
-\n\
+Music and SFX are all\n\
+owned by Nintendo,\n\
+and editted by me.\n\
 \n\
 \
 Luigi's Mansion\n\
