@@ -57,7 +57,7 @@ Hey 2uigi!\n\
 \n\
 \
 Yeah, you heard me right!\n\
-'2uigi', as in, Luigi #2.\n\
+'2uigi', as in, Luigi 2.\n\
 I figured you'd be a\n\
 little confused by that,\n\
 so I told E.Gadd I'd\n\
