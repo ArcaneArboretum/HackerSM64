@@ -35,17 +35,7 @@ romhacking.com discord.\n\
 Textures for the hack\n\
 were provided by\n\
 MrGreenThunder\n\
-on SMWCentral.net.\n\
-\
-Music and SFX are all\n\
-owned by Nintendo,\n\
-and editted by me.\n\
-\n\
-\
-Luigi's Mansion\n\
-and characters therein\n\
-are copyright\n\
-of Nintendo."))
+on SMWCentral.net."))
 
 // - E.Gadd
 DEFINE_DIALOG(DIALOG_001, 1, 6, 105, 200, _("\
@@ -557,9 +547,9 @@ I thought I got\n\
 rid of you already!\n\
 Are you... a ghost?\n\
 \
-No way! Whatever, King Boo\n\
-is busy at the top of\n\
-the mansion right now,\n\
+No way! Whatever,\n\
+King Boo is busy\n\
+right now,\n\
 \
 so I guess that leaves\n\
 it up to me to deal\n\
