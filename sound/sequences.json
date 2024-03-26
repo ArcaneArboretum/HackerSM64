@@ -110,17 +110,17 @@
             "1B"
         ]
     },
-    "0A_level_spooky": [
-        "lm_spooky_theme"
-    ],
-    "09_level_slide": [
-        "training_theme"
+    "23_lm_menu_theme": [
+        "lm_menu_theme"
     ],
     "13_event_merry_go_round": [
         "boolossus_theme"
     ],
-    "23_lm_menu_theme": [
-        "lm_menu_theme"
+    "09_level_slide": [
+        "training_theme"
+    ],
+    "0A_level_spooky": [
+        "lm_spooky_theme"
     ],
     "1C_event_toad_message": [
         "lm_toad_theme"

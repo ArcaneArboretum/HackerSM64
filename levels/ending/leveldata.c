@@ -351,3 +351,5 @@ const Gfx dl_cake_end_screen[] = {
     gsSPEndDisplayList(),
 };
 #endif
+
+#include "levels/ending/super2uigi62dl/model.inc.c"

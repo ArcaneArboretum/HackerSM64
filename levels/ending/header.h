@@ -19,4 +19,6 @@ extern const Gfx dl_cake_end_screen_eu_fix[];
 // script
 extern const LevelScript level_ending_entry[];
 
+#include "levels/ending/super2uigi62dl/header.h"
+
 #endif
