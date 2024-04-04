@@ -566,3 +566,44 @@ Watch out!\n\
 That foggy doorway\n\
 leads to the end\n\
 of the game!"))
+
+DEFINE_DIALOG(DIALOG_033, 1, 4, 30, 200, _("\
+Like, you're\n\
+not even subscribed\n\
+to SimpleFlips\n\
+already?\n\
+\
+Ok...\n\
+that's pretty\n\
+weird pal."))
+
+DEFINE_DIALOG(DIALOG_034, 1, 6, 30, 200, _("\
+And while you're\n\
+at it...\n\
+\n\
+\n\
+\n\
+\n\
+\
+Subscribe to\n\
+ArcaneArboretum\n\
+on YouTube\n\
+for updates\n\
+on all my ongoing\n\
+projects!"))
+
+DEFINE_DIALOG(DIALOG_035, 1, 6, 30, 200, _("\
+Shoutouts to my friends\n\
+GammaRhea,\n\
+Three Feet,\n\
+Dominator,\n\
+IDKShrubs,\n\
+Fatman333,\n\
+NinjaWithAShovel,\n\
+Fake Pilot,\n\
+Crazypinata,\n\
+ShadowScarKnight,\n\
+and more for their\n\
+encouragement and\n\
+support while I\n\
+worked on this hack!"))
